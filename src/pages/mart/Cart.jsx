@@ -11,18 +11,22 @@ export default function Cart() {
     <MainCmp
     comp={
         <>
-             <div className='text-center'>Cart</div>
-             <div className='w-full border-[2px] border-black rounded-md'>
-                <div className='grid grid-cols-2 gap-2 p-2'>
-                    <img className='w-[250px] h-[250px]' src={img1} alt=""/>
-                    <div className='text-center flex justify-center items-center'>hello</div>
-                </div>
-                <div className='p-2'>
-                    <BasicRating/>
-                    <ContainedButtons/>
+             <div className='p-2 flex justify-center items-center'></div>
 
-                </div>
+                <div className='grid grid-cols-4 gap-1'>
+                <div></div>
+                <div className='w-[300px] border-[2px] border-black rounded-md p-2'>
+                        <img className='w-[250px] h-[250px]' src={img1} alt=""/>
+                        <div className='mt-3' >
+                          <ContainedButtons/>
+                        </div>
+                      </div>
+                    <div className='p-2 border-[2px] border-slate-950 rounded-lg'>
+                        <BasicRating/>
+                    </div>
              </div>
+
+             
         </>
     }
     />
